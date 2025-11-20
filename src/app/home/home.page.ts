@@ -9,4 +9,11 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 })
 export class HomePage {
   constructor() {}
+
+message: string | null = null;
+
+showMessage() {
+  this.message = 'My primera App';
 }
+
+} 
