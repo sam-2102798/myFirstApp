@@ -14,4 +14,8 @@ export const routes: Routes = [
     path: 'principal',
     loadComponent: () => import('./paginas/principal/principal.page').then( m => m.PrincipalPage)
   },
+  {
+    path: 'ktm',
+    loadComponent: () => import('./paginas/ktm/ktm.page').then( m => m.KtmPage)
+  },
 ];
