@@ -13,7 +13,38 @@ import { Router } from '@angular/router';
    ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PrincipalPage implements OnInit {
-
+  productos = [
+    {
+      id: 1,
+      titulo:"KTM Motors",
+      precio:3500,
+      descripcion:"motocross",
+      imagen:"assets/img/ktm creoos.jpg"
+     },
+     {
+      id: 2,
+      titulo:"KTM Motors",
+      precio:4000,
+      descripcion:"motocross",
+      imagen:"assets/img/ktm-adventure-.jpg"
+     },
+     {
+      id: 3,
+      titulo:"KTM Motors",
+      precio:3500,
+      descripcion:"motocross",
+      imagen:"assets/img/ktm.dible.jpg" 
+     },
+     {
+      id: 4,
+      titulo:"KTM Motors",
+      precio:3500,
+      descripcion:"motocross",
+      imagen:"assets/img/KTM-Duke-.jpg"
+     },
+  ]
+  
+ 
   constructor(
     private router: Router
   ) { }
@@ -23,11 +54,9 @@ export class PrincipalPage implements OnInit {
 
 
 
-  irktm(){
+  irktm(producto:any){
 
-    this.router.navigate(['/ktm'])
-
-
+    this.router.navigate(['/ktm'], { queryParams:  producto });
   }
 
 
