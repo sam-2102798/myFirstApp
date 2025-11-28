@@ -1,18 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {IonContent, IonHeader, IonTitle, IonToolbar} from '@ionic/angular/standalone'
+import {IonContent, IonHeader, IonTitle, IonToolbar, IonButtons} from '@ionic/angular/standalone'
 @Component({
-  selector: 'app-header-global',
-  templateUrl: './header-global.component.html',
-  styleUrls: ['./header-global.component.scss'],
+  selector: 'app-headerglobal',
+  templateUrl: './headerglobal.component.html',
+  styleUrls: ['./headerglobal.component.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons]
 })
 export class HeaderGlobalComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {}
 
 }

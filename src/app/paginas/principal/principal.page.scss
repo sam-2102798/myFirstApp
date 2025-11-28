@@ -1,13 +1,36 @@
+ion-content {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  display: block;
+}
+
+
+ion-content .card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 5fr);
+  gap: auto;
+  padding: auto;
+}
+
+/* Ajustar cards */
 ion-card {
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba($color: #13ae25, $alpha: 1.0) ;
-    width: 650px;
-
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(19, 174, 37, 1.0);
+  width: auto;
+  height: auto;
 }
 
 
-.motocross{
-    color: #19c530;
+ion-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
+
+.motocross {
+  color: #1eba33;
+}
+
 
 

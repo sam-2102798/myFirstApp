@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { ActivatedRoute } from '@angular/router';
+import { HeaderGlobalComponent } from 'src/app/componentes/headerglobal/headerglobal.component';
 
 @Component({
   selector: 'app-ktm',
   templateUrl: './ktm.page.html',
   styleUrls: ['./ktm.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent]
 })
 export class KtmPage implements OnInit {
 
