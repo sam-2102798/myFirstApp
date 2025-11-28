@@ -12,15 +12,15 @@ import { ActivatedRoute } from '@angular/router';
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class KtmPage implements OnInit {
+
   producto: any = {};
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
-      this.producto = params; 
-
-    })
+      this.producto = params;
+    });
   }
 
 }

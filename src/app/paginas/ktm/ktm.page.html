@@ -1,13 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>ktm</ion-title>
+    <ion-title>{{ producto.titulo }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ktm</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+
+  <div class="contenedor-ktm">
+
+    <img [src]="producto.imagen" class="imagen-ktm"/>
+
+    <h1 class="titulo-ktm">{{ producto.titulo }}</h1>
+
+    <h2 class="precio-ktm">Precio: ${{ producto.precio }}</h2>
+
+    <p class="descripcion-ktm">
+      {{ producto.descripcion }}
+    </p>
+
+  </div>
+
 </ion-content>
+
+
