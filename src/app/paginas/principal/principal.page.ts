@@ -84,18 +84,11 @@ export class PrincipalPage implements OnInit {
       precio:3500,
       descripcion:"Adventure 1090-2017",
       imagen:"assets/img/ktm-1090-adventure-2017.jpg"
-     },
-  
-  
-  
-  
-  
-  
+     }, 
 
-
-  
    ]
-  
+
+ productosfiltrados = [...this.productos ];  
   
  constructor(
     private router: Router
@@ -110,6 +103,26 @@ export class PrincipalPage implements OnInit {
 
     this.router.navigate(['/ktm'], { queryParams:  producto });
   }
+
+
+ filtrar(event: any) {
+   const texto = (event.target.value || '' ).tolowerCase().trim();
+
+   if (texto  === '' ) {
+    this.productosfiltrados = [...this.productos ];
+    return;
+   }
+
+   this.productosfiltrados = this.productos.filter(
+    p=>p.titulo.toLowerCase().includes(texto) ||
+     p.descripcion.toLowerCase().includes(texto) || 
+     p.precio.toString().includes(texto) 
+    );
+
+
+  }
+
+
 
 
 }

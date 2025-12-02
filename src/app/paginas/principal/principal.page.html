@@ -2,15 +2,16 @@
 
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Principal KTM Motors</ion-title>
+    <ion-title>KTM Motors</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+   <ion-searchbar placeholder="buscar productos" (ionInput)="filtrar($event)">
+  </ion-searchbar>
 
   <div class="card-grid">
-    <ion-card *ngFor="let p of productos" (click)="irktm(p)">
+    <ion-card *ngFor="let p of productosfiltrados" (click)="irktm(p)">
       <img [src]="p.imagen" />
 
        <ion-card-header>
