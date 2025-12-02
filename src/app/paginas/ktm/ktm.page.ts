@@ -21,6 +21,7 @@ export class KtmPage implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.producto = params;
+      console.log(this.producto);
     });
   }
 
