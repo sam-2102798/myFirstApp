@@ -22,3 +22,4 @@ describe('HeaderglobalComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

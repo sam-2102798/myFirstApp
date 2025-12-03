@@ -4,7 +4,7 @@ ion-content {
   display: block;
 }
 
-
+/* filas y columnas de las cards */
 ion-content .card-grid {
   display: grid;
   grid-template-columns: repeat(5, 5fr);

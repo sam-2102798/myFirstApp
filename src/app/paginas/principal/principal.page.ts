@@ -37,7 +37,7 @@ export class PrincipalPage implements OnInit {
       precio:3500,
       descripcion:"Deportiva",
       especificaciones: "Motor 390-600 cc, refrigeración líquida, frenos ABS, suspensión deportiva rígida, peso 150 kg.",
-      imagen:"assets/img/ktm.dible.jpg" 
+      imagen:"assets/img/KTM-Duke-.jpg" 
      },
      {
       id: 4,
@@ -45,7 +45,7 @@ export class PrincipalPage implements OnInit {
       precio:3500,
       descripcion:"Duke-350",
       especificaciones: "Motor 350 cc, potencia 35-40 hp, refrigeración líquida, frenos ABS, tablero TFT, peso 150-155 kg.",
-      imagen:"assets/img/KTM-Duke-.jpg"
+      imagen:"assets/img/KTM-RC.jpg"
      },
      {
       id: 5,
@@ -128,11 +128,6 @@ export class PrincipalPage implements OnInit {
      p.descripcion.toLowerCase().includes(texto) || 
      p.precio.toString().includes(texto) 
     );
-
-
   }
-
-
-
-
 }
+
