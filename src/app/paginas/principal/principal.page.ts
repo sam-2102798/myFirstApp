@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 import { HeaderGlobalComponent } from 'src/app/componentes/headerglobal/headerglobal.component';
+import { FooterGlobalComponent } from 'src/app/componentes/footer-global/footer-global.component';
 
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.page.html',
   styleUrls: ['./principal.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent, FooterGlobalComponent]
    ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PrincipalPage implements OnInit {
