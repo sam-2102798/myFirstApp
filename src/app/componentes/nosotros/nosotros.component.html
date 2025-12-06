@@ -1,34 +1,60 @@
-<ion-header>
-  <ion-toolbar color="success">
-    <ion-title>Nosotros</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-headerglobal></app-headerglobal>
 
-<ion-content class="ion-padding">
+<ion-content [fullscreen]="true">
 
-  <div class="container-nosotros">
+  <section class="cabecera">
+    <h2>Sobre Nosotros</h2>
+    <p>Conoce más sobre nuestro equipo, misión y visión</p>
+  </section>
 
-    <img src="assets/img/Logotipo original .png" alt="Equipo" class="img-nosotros"/>
+  <ion-accordion-group expand="inset" class="acordion">
 
-    <h2 class="titulo">¿Quiénes Somos?</h2>
-    <p class="texto">
-      Somos un equipo dedicado a brindar el mejor servicio, con atención rápida,
-      eficiente y un enfoque en la experiencia del usuario. Trabajamos para que
-      cada cliente se sienta satisfecho.
-    </p>
+    <!-- QUIÉNES SOMOS -->
+    <ion-accordion value="1">
 
-    <h2 class="titulo">Nuestra Misión</h2>
-    <p class="texto">
-      Ofrecer soluciones modernas y de calidad con el uso de tecnologías actuales,
-      brindando transparencia, confianza y compromiso.
-    </p>
+      <ion-item slot="header" class="header">
+        <ion-icon name="people-outline"></ion-icon>
+        <ion-label>¿Quiénes Somos?</ion-label>
+      </ion-item>
 
-    <h2 class="titulo">Nuestra Visión</h2>
-    <p class="texto">
-      Ser un referente en innovación, servicio y desarrollo tecnológico,
-      superando las expectativas de nuestros usuarios.
-    </p>
+      <div class="faq-content" slot="content">
+        Somos un equipo dedicado a brindar el mejor servicio, con atención rápida,
+        eficiente y un enfoque en la experiencia del usuario. Trabajamos para que
+        cada cliente se sienta satisfecho.
+      </div>
 
-  </div>
+    </ion-accordion>
+
+    <!-- MISIÓN -->
+    <ion-accordion value="2">
+
+      <ion-item slot="header" class="header">
+        <ion-icon name="flag-outline"></ion-icon>
+        <ion-label>Nuestra Misión</ion-label>
+      </ion-item>
+
+      <div class="faq-content" slot="content">
+        Ofrecer soluciones modernas y de calidad con el uso de tecnologías actuales,
+        brindando transparencia, confianza y compromiso.
+      </div>
+
+    </ion-accordion>
+
+    <!-- VISIÓN -->
+    <ion-accordion value="3">
+
+      <ion-item slot="header" class="header">
+        <ion-icon name="eye-outline"></ion-icon>
+        <ion-label>Nuestra Visión</ion-label>
+      </ion-item>
+
+      <div class="faq-content" slot="content">
+        Ser un referente en innovación, servicio y desarrollo tecnológico,
+        superando las expectativas de nuestros usuarios.
+      </div>
+
+    </ion-accordion>
+
+  </ion-accordion-group>
 
 </ion-content>

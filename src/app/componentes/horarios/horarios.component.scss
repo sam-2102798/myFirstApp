@@ -1,0 +1,38 @@
+.container-horarios {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #29d84f;
+}
+
+.texto {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+.tabla-horarios {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+  border: 1px solid #29d84f;
+  padding: 10px;
+  color: #e0e0e0;
+}
+
+.tabla-horarios th {
+  background: rgba(41, 216, 79, 0.15);
+  color: #29d84f;
+}

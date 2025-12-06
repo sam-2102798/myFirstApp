@@ -1,3 +1,27 @@
-<p>
-  preguntas works!
-</p>
+<app-headerglobal></app-headerglobal>
+
+<ion-content [fullscreen]="true">
+
+  <section class="cabecera">
+    <h2>¿Tienes dudas?</h2>
+    <p>Encuentra aquí las respuestas más solicitadas por nuestros clientes</p>
+  </section>
+
+  <ion-accordion-group expand="inset" class="acordion">
+
+    <ion-accordion *ngFor="let item of preguntas; let i = index" [value]="i">
+
+      <ion-item slot="header" class="header">
+        <ion-icon [name]="item.icono"></ion-icon>
+        <ion-label>{{ item.titulo }}</ion-label>
+      </ion-item>
+
+      <div class="faq-content" slot="content">
+        {{ item.respuesta }}
+      </div>
+
+    </ion-accordion>
+
+  </ion-accordion-group>
+
+</ion-content>
