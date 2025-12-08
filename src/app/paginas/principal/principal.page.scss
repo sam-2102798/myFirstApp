@@ -2,75 +2,123 @@ ion-content {
   --padding-start: 10px;
   --padding-end: 10px;
   display: block;
+  background: #189318c4;
 }
 
-/* filas y columnas de las cards */
+/* Grid moderno para las cards */
 ion-content .card-grid {
   display: grid;
-  grid-template-columns: repeat(5, 5fr);
-  gap: auto;
-  padding: auto;
+
+  /* columnas y filas */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+
+  gap: 18px;
 }
 
-/* Ajustar cards */
+/* Diseño de cards*/
 ion-card {
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(19, 174, 37, 1.0);
-  width: auto;
-  height: auto;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #237223;
+
+  /* Sombra suave tipo */
+  box-shadow: 0 4px 15px rgba(59, 164, 27, 0.808);
+
+  /* Transición */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-
+/* Imagen con efecto zoom */
 ion-card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+
+  transition: transform 0.6s ease;
+  border-radius: 22px 22px 0 0;
 }
 
 .motocross {
-  color: #1eba33;
+  color: #189318;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
 }
 
-/* ==== EFECTO DE ZOOM + DEGRADADO MORADO COMO LA IMAGEN ==== */
+/* EFECTO DE HOVER */
+ion-card:hover {
+  transform: scale(1.06);
 
-/* El ion-card debe poder ocultar lo que se sale */
-ion-card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.4s ease-in-out;
+  /* Sombra más profunda al pasar el mouse */
+  box-shadow: 0 10px 25px rgba(57, 187, 21, 0.25);
 }
 
-/* Animación de zoom en la imagen */
-ion-card img {
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Zoom suave al pasar el mouse */
+/* Imagen zoom al hover */
 ion-card:hover img {
-  transform: scale(1.15);
+  transform: scale(1.2);
 }
 
-/* Capa de degradado encima como tu imagen */
-ion-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Suaviza el movimiento */
+ion-card,
+ion-card img {
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* BARRA DE BÚSQUEDA GLOWING CON EFECTO DE COLORES */
+.glow-container {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    #1eba33,
-    rgba(0, 0, 0, 0)
-  );
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
 }
 
-/* Mostrar degradado al pasar el mouse */
-ion-card:hover::before {
-  opacity: 1;
+.search-wrapper {
+  position: relative;
+  background:#171a16;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+
+  /* Efecto glow animado */
+  animation: glowing 3s infinite alternate ease-in-out;
+
+  /* Suavidad */
+  transition: 0.3s ease-in-out;
+}
+
+/*Efecto glowing dinámico real */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #7a00ff, 0 0 20px #7a00ff;
+  }
+  50% {
+    box-shadow: 0 0 12px #189318, 0 0 25px #189318;
+  }
+  100% {
+    box-shadow: 0 0 15px #ff00d9, 0 0 30px #ff00d9;
+  }
+}
+
+/* Input */
+.glow-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #189318;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Iconos */
+.icon-search,
+.icon-filter {
+  font-size: 22px;
+  color: #22ac39;
 }

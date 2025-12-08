@@ -9,7 +9,7 @@ import {IonContent, IonHeader, IonTitle, IonToolbar,IonButtons,IonIcon} from '@i
   templateUrl: './footer-global.component.html',
   styleUrls: ['./footer-global.component.scss'],
    standalone: true,
-   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule,IonButtons, IonIcon, RouterModule]
+   imports: [IonIcon, RouterModule]
    ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class FooterGlobalComponent  implements OnInit {

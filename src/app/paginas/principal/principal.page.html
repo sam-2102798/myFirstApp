@@ -7,19 +7,35 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-   <ion-searchbar placeholder="buscar productos" (ionInput)="filtrar($event)">
-  </ion-searchbar>
+
+  <!--  Barra de búsqueda glowing -->
+  <div class="glow-container">
+    <div class="search-wrapper">
+      <ion-icon name="search-outline" class="icon-search"></ion-icon>
+
+      <input
+        id="search-input"
+        placeholder="Buscar productos..."
+        type="text"
+        (input)="filtrar($event)"
+        class="glow-input"
+        autocomplete="on"
+      />
+
+      <ion-icon name="options-outline" class="icon-filter"></ion-icon>
+    </div>
+  </div>
 
   <div class="card-grid">
     <ion-card *ngFor="let p of productosfiltrados" (click)="irktm(p)">
       <img [src]="p.imagen" />
 
-       <ion-card-header>
-         <ion-card-title class="titulo">{{ p.titulo }}</ion-card-title>
-          <ion-card-subtitle color="success" class="precio">
-           Precio: ${{ p.precio }}
-          </ion-card-subtitle>
-        </ion-card-header>
+      <ion-card-header>
+        <ion-card-title class="titulo">{{ p.titulo }}</ion-card-title>
+        <ion-card-subtitle color="success" class="precio">
+          Precio: ${{ p.precio }}
+        </ion-card-subtitle>
+      </ion-card-header>
     </ion-card>
   </div>
 
