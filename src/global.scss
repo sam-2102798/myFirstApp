@@ -35,3 +35,10 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+.estilo-modal::part(backdrop){
+    --background-opacity: 1;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}

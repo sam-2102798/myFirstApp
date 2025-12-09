@@ -5,6 +5,9 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 import { Router } from '@angular/router';
 import { HeaderGlobalComponent } from 'src/app/componentes/headerglobal/headerglobal.component';
 import { FooterGlobalComponent } from 'src/app/componentes/footer-global/footer-global.component';
+import { VentanaEmergenteComponent } from 'src/app/componentes/ventana-emergente/ventana-emergente.component';
+import { ModalController } from '@ionic/angular/standalone';
+
 
 @Component({
   selector: 'app-principal',
@@ -79,7 +82,7 @@ export class PrincipalPage implements OnInit {
       precio:3500,
       descripcion:"Duke RC-450",
       especificaciones: "Motor 450 cc, potencia 50-55 hp, frenos ABS, suspensión deportiva, peso 155 kg.",
-      imagen:"assets/img/KTM-RC.jpg"
+      imagen:"assets/img/moto electrica ktm-125.jpg"
     },
     {
       id: 9,
@@ -87,7 +90,7 @@ export class PrincipalPage implements OnInit {
       precio:3500,
       descripcion:"SUPER Duke-1290",
       especificaciones: "Motor 1290 cc V-Twin, potencia 180 hp, MTC, ABS, modos de manejo, suspensión WP, frenos Brembo, peso 189 kg.",
-      imagen:"assets/img/ktm-super-duke-1290-r-2017-negro-con-gris-6fad2b.png"
+      imagen:"assets/img/MY24-KTM-1390-SUPER-DUKE-R_EVO-11-768x512.jpg"
     },
     {
       id: 10,
@@ -182,7 +185,11 @@ export class PrincipalPage implements OnInit {
 
   productosfiltrados = [...this.productos];  
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private modalCtrl: ModalController,
+  
+  ) { }
 
   ngOnInit() {}
 
@@ -204,4 +211,21 @@ export class PrincipalPage implements OnInit {
         p.precio.toString().includes(texto) 
     );
   }
+
+ async verimagengrande(producto: any){
+   const modal = await this.modalCtrl.create({
+    component: VentanaEmergenteComponent,
+    componentProps:{ Imagen: producto.imagen, titulo:producto.titulo },
+    cssClass: 'estilo-modal'
+   });
+
+   await modal.present();
+  } 
+
+  
+
+
+
+
+
 }
