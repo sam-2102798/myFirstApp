@@ -8,6 +8,20 @@
 
 <ion-content [fullscreen]="true">
 
+  <nav class="categorias" >
+    <ul class="menu-horizontal">
+      <li class="item" *ngFor="let cat of categorias">
+        {{cat.categorias}}
+        <ul class="submenu">
+          <li *ngFor="let sub of cat.subcategoria" (click)="filtrarPorSubcategoria(sub)">
+            {{sub}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+
   <!--  Barra de búsqueda glowing -->
   <div class="glow-container">
     <div class="search-wrapper">
@@ -40,5 +54,7 @@
 </ion-content>
 
 <app-footer-global></app-footer-global>
+
+
 
 
