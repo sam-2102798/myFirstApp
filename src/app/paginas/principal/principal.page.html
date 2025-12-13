@@ -7,25 +7,36 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <swiper-container
+  slides-per-view="1"
+  loop="true"
+  autoplay-delay="3000"
+  pagination="true"
+  class="swiper-banner"
+>
+  <swiper-slide *ngFor="let img of imagenesCarrusel">
+    <img [src]="img" class="img-carousel" />
+  </swiper-slide>
+</swiper-container>
 
-  <nav class="categorias" >
-    <ul class="menu-horizontal">
-      <li class="item" *ngFor="let cat of categorias">
-        {{cat.categorias}}
+  <nav class="categorias-bar">
+    <ul class="menu-horizontal"> 
+      <li class="item" (click)="mostrarTodos">Todos</li>
+      <li class="item" *ngFor="let cat of categorias">   
+        {{ cat.categorias }}
         <ul class="submenu">
-          <li *ngFor="let sub of cat.subcategoria" (click)="filtrarPorSubcategoria(sub)">
-            {{sub}}
+          <li *ngFor="let sub of cat.subcategorias" (click)="filtrarPorSubcategorias(sub)">            
+            {{ sub }}           
           </li>
         </ul>
       </li>
     </ul>
-
   </nav>
 
-  <!--  Barra de búsqueda glowing -->
+  <!--  Barra de búsqueda  -->
   <div class="glow-container">
     <div class="search-wrapper">
-      <ion-icon name="search-outline" class="icon-search"></ion-icon>
+      <ion-icon name="search-outline" class="icon-search" aria-hidden="true"></ion-icon>
 
       <input
         id="search-input"
@@ -33,28 +44,29 @@
         type="text"
         (input)="filtrar($event)"
         class="glow-input"
-        autocomplete="on"
+        autocomplete="off" 
       />
-
-      <ion-icon name="options-outline" class="icon-filter"></ion-icon>
+      <ion-icon name="options-outline" class="icon-filter" aria-hidden="true"></ion-icon>
     </div>
   </div>
 
   <div class="card-grid">
-    <ion-card *ngFor="let p of productosfiltrados">
-      <img [src]="p.imagen" (click)="verimagengrande(p)"/>
+    <ion-card *ngFor="let p of productosfiltrados"> 
+      <img [src]="p.imagen" class="'img" (click)="verimagengrande(p)"/>
 
       <ion-card-header>
-        <ion-card-title class="titulo" (click)="irktm(p)">{{ p.titulo }}</ion-card-title>
-        <ion-card-subtitle color="success" class="precio">Precio: ${{ p.precio }}</ion-card-subtitle>
+        <ion-card-title class="titulo" (click)="irktm(p)">
+            {{ p.titulo }}
+        </ion-card-title>
+        
+        <ion-card-subtitle color="success" class="precio">
+            Precio: ${{ p.precio }}
+        </ion-card-subtitle>
       </ion-card-header>
+      
     </ion-card>
   </div>
 
 </ion-content>
 
 <app-footer-global></app-footer-global>
-
-
-
-

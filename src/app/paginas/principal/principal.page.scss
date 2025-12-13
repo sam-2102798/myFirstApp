@@ -124,6 +124,7 @@ ion-card img {
 }
 
 .categorias{
+  background: #d6dbd6;
   border-bottom: 1px solid #e5ede5c4;
   padding: 25px 0;
 }
@@ -137,7 +138,7 @@ ion-card img {
   gap: 25px;
 }
 
-.menu-horizontal.item{
+.menu-horizontal .item{
   position: relative;
   padding: 8px 12px;
   cursor: pointer;

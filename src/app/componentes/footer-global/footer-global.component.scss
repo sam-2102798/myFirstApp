@@ -1,23 +1,43 @@
 .footer {
-    padding: 12px 0;
-    border-top: 1px solid #111311;
-
+  background: #f4f4f4;
+  padding: 6px 0;
+  border-top: 1px solid #ddd;
 }
 
 .footer-container {
-    text-align: center;
+  text-align: center;
+  line-height: 1.2;
 }
 
-.menu{
-    margin-top: 10px;
-}
-.menu a{
-    margin: 5px 25px;
-    font-size: 15px;
-    color: #14a51e;
+.social a {
+  font-size: 22px;
+  margin: 0 6px;
+  color: #333;
 }
 
-.menu a:hover{
-    color: #14a51e;
-    text-decoration: underline;
+.social a:hover {
+  color: #3880ff;
+}
+
+.menu-links {
+  margin-top: 4px;
+}
+
+.menu-links a {
+  display: inline-block;
+  margin: 5px 12px;
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+  color: #3880ff;
+  text-decoration: underline;
+}
+
+.copy {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #666;
 }
