@@ -5,7 +5,9 @@
     "precio": 3500,
     "descripcion": "Motocross Montañera",
     "especificaciones": "Motor 250 cc, refrigeración líquida, horquilla invertida, monoshock regulable, transmisión 5 velocidades, peso 110 kg.",
-    "imagen": "assets/img/ktm creoos.jpg"
+    "imagen": "assets/img/ktm creoos.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos de aventura"
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "precio": 4000,
     "descripcion": "Doble Propósito Adventure",
     "especificaciones": "Motor 390-450 cc, uso on/off road, tanque 14-15 L, suspensión de largo recorrido, ABS doble canal, peso 160-170 kg.",
-    "imagen": "assets/img/ktm-adventure-.jpg"
+    "imagen": "assets/img/ktm-adventure-.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos de aventura"
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "precio": 3700,
     "descripcion": "Deportiva Naked (390-600 cc)",
     "especificaciones": "Motor 390-600 cc, refrigeración líquida, frenos ABS, suspensión deportiva rígida, peso 150 kg.",
-    "imagen": "assets/img/KTM-Duke-.jpg"
+    "imagen": "assets/img/KTM-Duke-.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos naked"
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "precio": 3500,
     "descripcion": "Deportiva Carenada",
     "especificaciones": "Motor 350 cc, potencia 35-40 hp, refrigeración líquida, frenos ABS, tablero TFT, peso 150-155 kg.",
-    "imagen": "assets/img/KTM-RC.jpg"
+    "imagen": "assets/img/KTM-RC.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos deportivas"
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "precio": 2500,
     "descripcion": "Naked de baja cilindrada",
     "especificaciones": "Motor 250 cc, potencia 30 hp, caja 6 velocidades, chasis trellis, frenos ABS, peso 148 kg.",
-    "imagen": "assets/img/KTM-SUPER.jpg"
+    "imagen": "assets/img/KTM-SUPER.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos naked"
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "precio": 4500,
     "descripcion": "Superdeportiva V-Twin",
     "especificaciones": "Motor 1190 cc V-Twin, potencia 170 hp, suspensión WP, frenos Brembo ABS, chasis tubular, peso 183 kg.",
-    "imagen": "assets/img/KTM-RC8.jpg"
+    "imagen": "assets/img/KTM-RC8.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos superdeportivas"
   },
   {
     "id": 7,
@@ -53,7 +65,9 @@
     "precio": 3200,
     "descripcion": "Off-road Juvenil",
     "especificaciones": "Motor 150 cc, off-road juvenil, arranque eléctrico y patada, suspensión off-road, transmisión 5 velocidades, peso 90 kg.",
-    "imagen": "assets/img/KTM-MINICROOS.webp"
+    "imagen": "assets/img/KTM-MINICROOS.webp",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos cruiser"
   },
   {
     "id": 8,
@@ -61,7 +75,9 @@
     "precio": 3800,
     "descripcion": "Naked / Deportiva (450 cc)",
     "especificaciones": "Motor 450 cc, potencia 50-55 hp, frenos ABS, suspensión deportiva, peso 155 kg.",
-    "imagen": "assets/img/moto electrica ktm-125.jpg"
+    "imagen": "assets/img/moto electrica ktm-125.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos deportivas"
   },
   {
     "id": 9,
@@ -69,7 +85,9 @@
     "precio": 5000,
     "descripcion": "Hyper Naked V-Twin",
     "especificaciones": "Motor 1290 cc V-Twin, potencia 180 hp, MTC, ABS, modos de manejo, suspensión WP, frenos Brembo, peso 189 kg.",
-    "imagen": "assets/img/MY24-KTM-1390-SUPER-DUKE-R_EVO-11-768x512.jpg"
+    "imagen": "assets/img/MY24-KTM-1390-SUPER-DUKE-R_EVO-11-768x512.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos naked"
   },
   {
     "id": 10,
@@ -77,7 +95,9 @@
     "precio": 3900,
     "descripcion": "Doble Propósito de Alta Cilindrada",
     "especificaciones": "Motor 1050-1090 cc, potencia 125 hp, suspensión WP largo recorrido, ABS off-road, modos de manejo, peso 205 kg.",
-    "imagen": "assets/img/ktm-1090-adventure-2017.jpg"
+    "imagen": "assets/img/ktm-1090-adventure-2017.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos de aventura"
   },
   {
     "id": 11,
@@ -85,7 +105,9 @@
     "precio": 3800,
     "descripcion": "Enduro 2 Tiempos",
     "especificaciones": "Motor 300 cc 2T, arranque eléctrico, suspensión WP Xplor, peso 103 kg.",
-    "imagen": "assets/img/ktm_Stoked__87867.jpg"
+    "imagen": "assets/img/ktm_Stoked__87867.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos de aventura"
   },
   {
     "id": 12,
@@ -93,7 +115,9 @@
     "precio": 4200,
     "descripcion": "Motocross Profesional 4 Tiempos",
     "especificaciones": "Motor 450 cc 4T, embrague hidráulico, suspensión WP AER, peso 100 kg.",
-    "imagen": "assets/img/KTM-450-Rally-Replica-main.jpg"
+    "imagen": "assets/img/KTM-450-Rally-Replica-main.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos cruiser"
   },
   {
     "id": 13,
@@ -101,7 +125,9 @@
     "precio": 3100,
     "descripcion": "Naked Sport de Baja Cilindrada",
     "especificaciones": "Motor 200 cc, inyección electrónica, ABS, tablero digital TFT.",
-    "imagen": "assets/img/315762__KTM-200-DUKE.jpg"
+    "imagen": "assets/img/315762__KTM-200-DUKE.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos naked"
   },
   {
     "id": 14,
@@ -109,7 +135,9 @@
     "precio": 5500,
     "descripcion": "Adventure de Máximo Desempeño",
     "especificaciones": "Motor 1301 cc, potencia 160 hp, radar ACC, modos de manejo, suspensión electrónica.",
-    "imagen": "assets/img/ktm-1190-adventure-r-price-specs-malaysia-1.jpg"
+    "imagen": "assets/img/ktm-1190-adventure-r-price-specs-malaysia-1.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos de aventura"
   },
   {
     "id": 15,
@@ -117,7 +145,9 @@
     "precio": 2800,
     "descripcion": "Deportiva de Baja Cilindrada",
     "especificaciones": "Motor 200 cc, chasis tubular, ABS, asiento deportivo, peso 137 kg.",
-    "imagen": "assets/img/ktm-rc-125-orange-with-black.jpg"
+    "imagen": "assets/img/ktm-rc-125-orange-with-black.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos deportivas"
   },
   {
     "id": 16,
@@ -125,7 +155,9 @@
     "precio": 4700,
     "descripcion": "Enduro de Alta Cilindrada",
     "especificaciones": "Motor 690 cc, inyección, ABS off-road, suspensión WP Xplor.",
-    "imagen": "assets/img/KTM-690-SMC-R-2023.jpg"
+    "imagen": "assets/img/KTM-690-SMC-R-2023.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos de aventura"
   },
   {
     "id": 17,
@@ -133,7 +165,9 @@
     "precio": 4500,
     "descripcion": "Naked Monocilíndrica",
     "especificaciones": "Motor 690 cc monocilíndrico, ABS, quickshifter, peso 148 kg.",
-    "imagen": "assets/img/duke 690 rs -004.jpg"
+    "imagen": "assets/img/duke 690 rs -004.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos naked"
   },
   {
     "id": 18,
@@ -141,7 +175,9 @@
     "precio": 5200,
     "descripcion": "Deportiva de Media Cilindrada",
     "especificaciones": "Motor 373 cc, ABS en curva, control de tracción, TFT, peso 155 kg.",
-    "imagen": "assets/img/2024-ktm-rc-390-studio-blue-right-side-1024x576.jpg"
+    "imagen": "assets/img/2024-ktm-rc-390-studio-blue-right-side-1024x576.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos deportivas"
   },
   {
     "id": 19,
@@ -149,7 +185,9 @@
     "precio": 2600,
     "descripcion": "Motocross 2 Tiempos",
     "especificaciones": "Motor 125 cc 2 tiempos, ultra ligera, suspensión WP XAct.",
-    "imagen": "assets/img/KTM-690-SMC-R-2023.jpg"
+    "imagen": "assets/img/KTM-690-SMC-R-2023.jpg",
+    "categorias": "KTM Motos cross",
+    "subcategorias": "motos cruiser"
   },
   {
     "id": 20,
@@ -157,6 +195,8 @@
     "precio": 6000,
     "descripcion": "Hyper Naked Top de Línea",
     "especificaciones": "Motor 1301 cc, 180 hp, suspensión semi-activa, control anti-wheelie.",
-    "imagen": "assets/img/493008_BRABUS-1300-R-Edition-23_-Static-images_EU_-Global-e1687093438945-1260x875.jpg"
+    "imagen": "assets/img/493008_BRABUS-1300-R-Edition-23_-Static-images_EU_-Global-e1687093438945-1260x875.jpg",
+    "categorias": "KTM Motors",
+    "subcategorias": "motos superdeportivas"
   }
 ]

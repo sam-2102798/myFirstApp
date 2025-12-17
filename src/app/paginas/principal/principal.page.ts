@@ -84,20 +84,18 @@ export class PrincipalPage implements OnInit {
   }
   imagenesCarrusel = [
   'assets/img/duke 690 rs -004.jpg',
-  'assets/img/ktm_Stoked__87867.jpg',
-  'assets/img/ktm-1290-super-adventure-r-2021-1600-01.jpg',
-  'assets/img/ktm-adventure-.jpg'
-  
-];
+  'assets/img/493008_BRABUS-1300-R-Edition-23_-Static-images_EU_-Global-e1687093438945-1260x875.jpg',
+  'assets/img/KTM-RC.jpg',
+  'assets/img/2024-ktm-rc-390-studio-blue-right-side-1024x576.jpg'];
 
-slideOpts = {
-  initialSlide: 0,
-  speed: 600,
-  autoplay: {
-    delay: 300
-  },
-  loop: true
-};
+  slideOpts = {
+   initialSlide: 0,
+   speed: 50,
+   autoplay: {
+     delay: 300
+    },
+   loop: true
+ };
  
   
 }

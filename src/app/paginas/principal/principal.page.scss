@@ -169,22 +169,23 @@ ion-card img {
   transition: all 0.3s ease;
   z-index: 999;
 
-  .item:hover .submnenu{
-    max-height: 500px;
-    opacity: 1;
-  }
-
   .submenu li{
     padding: 8px 20px;
     cursor: pointer;
-    color: #f4f8f4;
+    color: #279927;
     transition: background-color 0.3s, color 0.3s;
   }
 
   .submenu li:hover{
-    background-color:#dde8ddc4;
-    color:#e7eee7;
+    background-color:#1ea41ec4;
+    color:#28b328;
   }
+  .submenu.activo {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 
 
 }

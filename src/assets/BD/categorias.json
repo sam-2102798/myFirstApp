@@ -11,16 +11,13 @@
     "categorias": "KTM Motos cross",
     "subcategorias": [
       "motos de aventura",
-      "motos cruiser",
-      "motos scooter"
+      "motos cruiser"
     ]
   },
   {
     "categorias": "KTM Motos eléctricas",
     "subcategorias": [
-      "motos eléctricas urbanas",
-      "motos eléctricas deportivas",
-      "motos eléctricas de aventura"
+      "motos eléctricas urbanas"
     ]
   }
 ]

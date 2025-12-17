@@ -1,37 +1,36 @@
-<app-headerglobal></app-headerglobal>
-
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>KTM Motors</ion-title>
-  </ion-toolbar>
-</ion-header>
+ls<app-headerglobal></app-headerglobal>
 
 <ion-content [fullscreen]="true">
   <swiper-container
-  slides-per-view="1"
-  loop="true"
-  autoplay-delay="3000"
-  pagination="true"
-  class="swiper-banner"
->
-  <swiper-slide *ngFor="let img of imagenesCarrusel">
-    <img [src]="img" class="img-carousel" />
-  </swiper-slide>
-</swiper-container>
+    slides-per-view="1"
+    loop="true"
+    autoplay-delay="2000"
+    pagination="true"
+    class="swiper-banner">
+  
+
+   <swiper-slide *ngFor="let img of imagenesCarrusel">
+     <img [src]="img" class="img-carousel" />
+   </swiper-slide>
+  </swiper-container>
 
   <nav class="categorias-bar">
     <ul class="menu-horizontal"> 
-      <li class="item" (click)="mostrarTodos">Todos</li>
-      <li class="item" *ngFor="let cat of categorias">   
-        {{ cat.categorias }}
+     <li class="item" (click)="mostrarTodos()">Todos</li>
+
+     <li class="item" *ngFor="let cat of categorias">   
+       {{ cat.categorias }}
+
         <ul class="submenu">
-          <li *ngFor="let sub of cat.subcategorias" (click)="filtrarPorSubcategorias(sub)">            
-            {{ sub }}           
+          <li *ngFor="let sub of cat.subcategorias"
+             (click)="filtrarPorSubcategorias(sub); $event.stopPropagation()">
+           {{ sub }}
           </li>
         </ul>
       </li>
     </ul>
   </nav>
+
 
   <!--  Barra de búsqueda  -->
   <div class="glow-container">
