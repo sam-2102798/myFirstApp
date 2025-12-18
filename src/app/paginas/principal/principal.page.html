@@ -1,25 +1,25 @@
-ls<app-headerglobal></app-headerglobal>
+<app-headerglobal></app-headerglobal>
 
 <ion-content [fullscreen]="true">
   <swiper-container
-    slides-per-view="1"
-    loop="true"
-    autoplay-delay="2000"
-    pagination="true"
-    class="swiper-banner">
-  
+   slides-per-view="1"
+   loop="true"
+   autoplay-delay="2000"
+   pagination="true"
+   class="swiper-banner">
 
    <swiper-slide *ngFor="let img of imagenesCarrusel">
      <img [src]="img" class="img-carousel" />
-   </swiper-slide>
-  </swiper-container>
+    </swiper-slide>
+ </swiper-container>
+
 
   <nav class="categorias-bar">
     <ul class="menu-horizontal"> 
      <li class="item" (click)="mostrarTodos()">Todos</li>
 
      <li class="item" *ngFor="let cat of categorias">   
-       {{ cat.categorias }}
+       {{ cat.categorias }} 
 
         <ul class="submenu">
           <li *ngFor="let sub of cat.subcategorias"
@@ -51,7 +51,7 @@ ls<app-headerglobal></app-headerglobal>
 
   <div class="card-grid">
     <ion-card *ngFor="let p of productosfiltrados"> 
-      <img [src]="p.imagen" class="'img" (click)="verimagengrande(p)"/>
+      <img [src]="p.imagen" class="img" (click)="verimagengrande(p)"/>
 
       <ion-card-header>
         <ion-card-title class="titulo" (click)="irktm(p)">

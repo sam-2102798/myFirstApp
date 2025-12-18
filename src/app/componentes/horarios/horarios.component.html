@@ -1,36 +1,53 @@
 <app-headerglobal></app-headerglobal>
 
-<ion-content>
+<div class="container-horarios">
 
-  <app-header-global titulo="Horarios"></app-header-global>
+  <h2 class="titulo">Horarios de Atención</h2>
 
-  <div class="container-horarios">
+  <p class="texto">
+    Nuestro horario de atención está diseñado para brindarte el mejor servicio.
+    Ten en cuenta los días laborables, fines de semana y feriados nacionales del Ecuador.
+  </p>
 
-    <h2 class="titulo">Horarios de Atención</h2>
-
-    <p class="texto">
-      Estos son los horarios disponibles para nuestros servicios.
-    </p>
-
-    <table class="tabla-horarios">
+  <table class="tabla-horarios">
+    <thead>
       <tr>
         <th>Día</th>
         <th>Horario</th>
+        <th>Observaciones</th>
       </tr>
+    </thead>
+
+    <tbody>
       <tr>
-        <td>Lunes - Viernes</td>
-        <td>08:00 - 17:00</td>
+        <td>Lunes a Viernes</td>
+        <td>08:00 – 17:00</td>
+        <td>Atención normal</td>
       </tr>
+
       <tr>
-        <td>Sábado</td>
-        <td>09:00 - 13:00</td>
+        <td>Sábados</td>
+        <td>09:00 – 13:00</td>
+        <td>Horario reducido</td>
       </tr>
+
       <tr>
-        <td>Domingo</td>
+        <td>Domingos</td>
+        <td>No laborable</td>
         <td>Cerrado</td>
       </tr>
-    </table>
 
-  </div>
+      <tr class="feriado">
+        <td>Feriados nacionales (Ecuador)</td>
+        <td>No laborable</td>
+        <td>Atención suspendida</td>
+      </tr>
+    </tbody>
+  </table>
 
-</ion-content>
+  <p class="nota">
+    * Los feriados nacionales se rigen según el calendario oficial del Ecuador.
+    En fechas especiales, el horario puede variar.
+  </p>
+
+</div>

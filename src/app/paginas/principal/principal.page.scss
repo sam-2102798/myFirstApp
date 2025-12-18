@@ -1,73 +1,46 @@
 ion-content {
-  --padding-start: 10px;
-  --padding-end: 10px;
+  --padding-start: 15px;
+  --padding-end: 15px;
   display: block;
   background: #189318c4;
 }
 
-/* Grid moderno para las cards */
 ion-content .card-grid {
   display: grid;
-
-  /* columnas y filas */
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, auto);
-
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
 }
 
-/* Diseño de cards*/
 ion-card {
   border-radius: 22px;
   overflow: hidden;
   cursor: pointer;
   background: #237223;
-
-  /* Sombra suave tipo */
   box-shadow: 0 4px 15px rgba(59, 164, 27, 0.808);
-
-  /* Transición */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Imagen con efecto zoom */
 ion-card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
-
-  transition: transform 0.6s ease;
   border-radius: 22px 22px 0 0;
+  transition: transform 0.6s ease;
 }
 
-.motocross {
-  color: #189318;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 0;
-}
+/* Hover SOLO en PC */
+@media (hover: hover) {
+  ion-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 25px rgba(57, 187, 21, 0.25);
+  }
 
-/* EFECTO DE HOVER */
-ion-card:hover {
-  transform: scale(1.06);
-
-  /* Sombra más profunda al pasar el mouse */
-  box-shadow: 0 10px 25px rgba(57, 187, 21, 0.25);
-}
-
-/* Imagen zoom al hover */
-ion-card:hover img {
-  transform: scale(1.2);
-}
-
-/* Suaviza el movimiento */
-ion-card,
-ion-card img {
-  transition: all 0.4s ease-in-out;
+  ion-card:hover img {
+    transform: scale(1.2);
+  }
 }
 
 
-/* BARRA DE BÚSQUEDA GLOWING CON EFECTO DE COLORES */
 .glow-container {
   width: 100%;
   display: flex;
@@ -77,23 +50,17 @@ ion-card img {
 
 .search-wrapper {
   position: relative;
-  background:#171a16;
+  background: #171a16;
   padding: 12px 20px;
   width: 100%;
   max-width: 900px;
   border-radius: 50px;
-
   display: flex;
   align-items: center;
-
-  /* Efecto glow animado */
   animation: glowing 3s infinite alternate ease-in-out;
-
-  /* Suavidad */
   transition: 0.3s ease-in-out;
 }
 
-/*Efecto glowing dinámico real */
 @keyframes glowing {
   0% {
     box-shadow: 0 0 10px #7a00ff, 0 0 20px #7a00ff;
@@ -106,7 +73,6 @@ ion-card img {
   }
 }
 
-/* Input */
 .glow-input {
   flex: 1;
   background: transparent;
@@ -116,76 +82,83 @@ ion-card img {
   outline: none;
 }
 
-/* Iconos */
 .icon-search,
 .icon-filter {
   font-size: 22px;
   color: #22ac39;
 }
 
-.categorias{
+/* =======================
+   MENÚ DE CATEGORÍAS
+======================= */
+.categorias {
   background: #d6dbd6;
   border-bottom: 1px solid #e5ede5c4;
   padding: 25px 0;
 }
 
+/* MENÚ PRINCIPAL HORIZONTAL */
 .menu-horizontal {
   list-style: none;
   display: flex;
+  gap: 25px;
   justify-content: center;
   margin: 0;
-  padding: 0;
-  gap: 25px;
+  padding: 10px 16px;
 }
 
-.menu-horizontal .item{
+/* Item padre */
+.menu-horizontal .item {
   position: relative;
-  padding: 8px 12px;
   cursor: pointer;
+  font-weight: bold;
   color: #f5f8f5;
- transition:color 0.3s;
- font-weight:bold;
+  transition: color 0.3s;
 }
 
-.menu-horizontal .item:hover{
-  color:#d1e3d1;
+.menu-horizontal .item:hover {
+  color: #d1e3d1;
 }
 
-.submenu{
+
+.submenu {
   list-style: none;
-  display: flex;
-  top: 30px;
-  left: 0;
   position: absolute;
-  background-color:#eef2ee;
+  top: 100%;
+  left: 0;
+
+  background-color: #eef2ee;
   padding: 10px 0;
   margin: 0;
-  min-width: 100px;
+  min-width: 160px;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+
   transition: all 0.3s ease;
   z-index: 999;
+}
 
-  .submenu li{
-    padding: 8px 20px;
-    cursor: pointer;
-    color: #279927;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  .submenu li:hover{
-    background-color:#1ea41ec4;
-    color:#28b328;
-  }
-  .submenu.activo {
+/* MOSTRAR SUBMENÚ AL HOVER */
+.menu-horizontal .item:hover .submenu {
+  max-height: 300px;
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
 }
 
+/* ÍTEMS DEL SUBMENÚ */
+.submenu li {
+  padding: 8px 20px;
+  cursor: pointer;
+  color: #279927;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-
+.submenu li:hover {
+  background-color: #1ea41ec4;
+  color: #28b328;
 }
